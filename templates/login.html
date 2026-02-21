@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container login-container">
+        <h1 class="main-title">Student Feedback System</h1>
+
+        <form action="/login" method="POST" class="login-form">
+            <label>Enter Roll Number</label>
+            <input type="text" name="roll_no" placeholder="22BCS004" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Course</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Select Course</h2>
+
+        {% for course in courses %}
+            <div class="course-row">
+
+                <div class="course-info">
+                    <div class="course-name">
+                        {{ course[1] }}
+                    </div>
+
+                    <div class="prof-name">
+                        {{ course[2] }}
+                    </div>
+                </div>
+
+                <a class="feedback-btn"
+                   href="{{ url_for('feedback_page',
+                                    student_id=student_id,
+                                    course_id=course[0]) }}">
+                    Give Feedback
+                </a>
+
+            </div>
+        {% endfor %}
+
+    </div>
+
+</body>
+</html>

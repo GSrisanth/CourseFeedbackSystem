@@ -1,0 +1,158 @@
+/* ================= GLOBAL PAGE ================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ================= CARD CONTAINER ================= */
+
+.container {
+    background: white;
+    padding: 60px 70px;
+    border-radius: 25px;
+    box-shadow: 0px 25px 60px rgba(0,0,0,0.25);
+    width: 850px;   /* Wider to prevent overlap */
+}
+
+/* Login container */
+.login-container {
+    width: 450px;
+    text-align: center;
+}
+
+/* ================= TITLES ================= */
+
+.main-title {
+    margin-bottom: 35px;
+    font-size: 32px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 45px;
+    color: #333;
+    font-size: 32px;
+}
+
+/* ================= FORM ================= */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(102,126,234,0.5);
+}
+
+/* ================= BUTTON ================= */
+
+button {
+    padding: 12px;
+    background: #667eea;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5563c1;
+    transform: scale(1.03);
+}
+
+/* ================= LINKS ================= */
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* ================= COURSE PAGE ================= */
+
+.course-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 40px;  /* Prevent collision */
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;   /* Allows text to take space properly */
+}
+
+.course-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.prof-name {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Feedback Button */
+.feedback-btn {
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #667eea, #5563c1);
+    color: white;
+    border-radius: 12px;
+    font-size: 16px;
+    white-space: nowrap;  /* Prevent wrapping */
+    transition: 0.3s;
+}
+
+.feedback-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ================= SUCCESS PAGE ================= */
+
+.success-message {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #667eea;
+}
